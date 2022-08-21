@@ -1,17 +1,131 @@
-.logo {
-  position: absolute;
+root {
+  --blue: #2196f3;
+  --white: #ffffff;
+  --grey: #757575;
+  --backgroundlightblue: #f5f4fa;
+  --backgroundgrey: #2f303a;
+  --black: #000;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+}
+
+.logo-header {
   width: 145px;
   height: 31px;
-  left: 215px;
-  top: 24px;
-
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  /* identical to box height */
+  line-height: 1.19;
   letter-spacing: 0.03em;
+  color: var(--black);
+}
 
+.text-blue {
+  color: var(--blue);
+}
+
+.links-not-underlined {
+  text-decoration: none;
+}
+
+.navi-list {
+  list-style: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0.87;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.navi-list:hover {
   color: #2196f3;
+  text-decoration-line: underline;
+}
+
+.section-top {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white);
+}
+
+.section-top-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white);
+}
+
+.description-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.description-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.description-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-member {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.member-proffession {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--grey);
+}
+
+.logo-footer {
+  font-family: "Raleway" sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+}
+
+.footer-links {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  border: 1px solid #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.footer-place {
+  color: #ffffff;
+}
+
+.footer-phone {
+  border: none;
+  text-shadow: none;
 }
