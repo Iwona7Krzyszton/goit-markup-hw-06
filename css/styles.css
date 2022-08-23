@@ -5,7 +5,12 @@ root {
   --grey: #757575;
   --backgroundlightblue: #f5f4fa;
   --backgroundgrey: #2f303a;
-  --black: ;
+  --footerlinks: rgba(255, 255, 255, 0.6);
+  --productborder: #eeeeee;
+  --background: rgba(47, 48, 58, 0.4);
+  --iconcolor: #afb1b8;
+  --footericon: rgba(255, 255, 255, 0.1);
+  --backgroundbackdrop: rgba(000, 000, 000, 0.2);
 }
 
 body {
@@ -26,7 +31,7 @@ body {
 }
 
 .text-black {
-  color: var(--black);
+  color: black;
 }
 
 .links-not-underlined {
@@ -65,6 +70,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--white);
+  background-color: var(--backgroundgrey);
 }
 
 .section-top-button {
@@ -126,16 +132,16 @@ body {
 }
 
 .footer-links {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footerlinks);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  border: 1px solid #000000;
+  border: 1px solid black;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .footer-place {
-  color: #ffffff;
+  color: var(--white);
 }
 
 .footer-phone {
