@@ -1,18 +1,20 @@
 root {
+  --fontmaincolour: #212121;
   --blue: #2196f3;
   --white: #ffffff;
   --grey: #757575;
   --backgroundlightblue: #f5f4fa;
   --backgroundgrey: #2f303a;
-  --black: #000;
+  --black: ;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #212121;
+  color: var(--fontmaincolour);
 }
 
 .logo-header {
+  text-decoration: none;
   width: 145px;
   height: 31px;
   font-family: "Raleway";
@@ -20,29 +22,40 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--black);
+  color: var(--blue);
 }
 
-.text-blue {
-  color: var(--blue);
+.text-black {
+  color: var(--black);
 }
 
 .links-not-underlined {
   text-decoration: none;
+  color: var(--grey);
 }
 
 .navi-list {
   list-style: none;
+  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 0.87;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--fontmaincolour);
 }
 
-.navi-list:hover {
-  color: #2196f3;
-  text-decoration-line: underline;
+.navi-list:hover,
+.navi-list:focus {
+  color: var(--activecolor);
+}
+
+.links-contact {
+  color: var(--grey);
+}
+
+.links-contact:hover,
+.links-contact:focus {
+  color: var(--activecolor);
 }
 
 .section-top {
