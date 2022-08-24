@@ -171,6 +171,11 @@ body {
   padding: 0;
 }
 
+.footer-style {
+  width: 100%;
+  background-color: var(--backgroundgrey);
+  padding: 60px 0;
+}
 .logo-footer {
   font-family: "Raleway" sans-serif;
   font-weight: 700;
@@ -180,6 +185,8 @@ body {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: var(--white);
   background: var(--backgroundgrey);
+  width: 145px;
+  height: 31px;
 }
 
 .footer-links {
@@ -201,7 +208,6 @@ body {
 }
 
 .links-shadow {
-  border: 1px solid #000000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
