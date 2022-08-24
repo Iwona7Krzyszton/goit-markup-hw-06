@@ -136,8 +136,8 @@ body {
   margin: 0px 0 50px 0;
 }
 
-.team-background
- {background-color: var(--backgroundlightblue);
+.team-background {
+  background-color: var(--backgroundlightblue);
   padding: 94px 0;
 }
 
@@ -187,8 +187,6 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  border: 1px solid black;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .footer-links:hover {
@@ -199,11 +197,13 @@ body {
   color: var(--activecolor);
 }
 
-.footer-address {
-  color: var(--white);
+.links-shadow {
+  border: 1px solid #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.footer-contacts {
-  border: none;
-  text-shadow: none;
+.footer-address {
+  color: var(--white);
+  margin: 20px 0 0 0;
+  font-style: normal;
 }
