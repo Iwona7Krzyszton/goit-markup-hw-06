@@ -47,8 +47,11 @@ body {
 }
 
 .navi-list {
+  display: flex;
   list-style: none;
   line-height: 1.2;
+  margin: 0;
+  gap: 46px;
 }
 
 .navi-list:hover {
@@ -74,6 +77,11 @@ body {
   color: var(--activecolor);
 }
 
+.links-contacts-style: {
+  padding: 0 0 0 278px;
+  gap: 50px;
+}
+
 .section-top {
   font-weight: 900;
   font-size: 44px;
@@ -82,6 +90,14 @@ body {
   letter-spacing: 0.06em;
   color: var(--white);
   background-color: var(--backgroundgrey);
+  width: 100%;
+  height: 600px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 0;
 }
 
 .main-button-style {
@@ -112,6 +128,23 @@ body {
   color: var(--white);
 }
 
+.speciality-style {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  margin: 94px 0 0 0;
+  gap: 30px;
+  justify-content: center;
+}
+
+.speciality-list-style {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  justify-content: center;
+}
 .description-title {
   font-weight: 700;
   font-size: 14px;
@@ -136,12 +169,26 @@ body {
   margin: 0px 0 50px 0;
 }
 
+.section-header-style {
+  align-items: center;
+  flex-direction: column;
+  padding: 94px 0;
+}
+
 .team-background {
   background-color: var(--backgroundlightblue);
   padding: 94px 0;
 }
 
 .team-list {
+  list-style: none;
+  justify-content: center;
+}
+
+.team-list-style {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
   list-style: none;
   justify-content: center;
 }
@@ -175,6 +222,7 @@ body {
   width: 100%;
   background-color: var(--backgroundgrey);
   padding: 60px 0;
+  padding-left: 215px;
 }
 .logo-footer {
   font-family: "Raleway" sans-serif;
@@ -215,4 +263,73 @@ body {
   color: var(--white);
   margin: 20px 0 0 0;
   font-style: normal;
+}
+
+/*strona portfolio*/
+.wrapper {
+  width: 1600px;
+  margin: 0 auto;
+  background-color: var(--white);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 25px 0 24px 0;
+  gap: 93px;
+}
+
+.buttons-selection {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 8px;
+  margin-top: 94px;
+}
+
+.buttons-list {
+  font-family: "Roboto";
+  height: 38px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  border-radius: 3px;
+  border-width: 0;
+  padding: 6px 22px;
+  letter-spacing: 0.03em;
+  background: var(--backgroundlightblue);
+}
+
+.buttons-list:hover {
+  background-color: var(--activecolor);
+  color: var(--white);
+}
+
+.buttons-list:focus {
+  background-color: var(--activecolor);
+  color: var(--white);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  background: var(--white);
+  list-style: none;
+  border: 1px solid rgba(238, 238, 238, 1);
+  margin: 50 auto 94 auto;
+}
+
+.product-card {
+  width: 370px;
+  height: 404px;
+  background: var(--white);
+  border: 1px solid var(--productborder);
+  margin: 0;
 }
