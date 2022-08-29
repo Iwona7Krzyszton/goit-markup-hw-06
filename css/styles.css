@@ -77,7 +77,7 @@ body {
   color: var(--activecolor);
 }
 
-.links-contacts-style: {
+.links-contacts-style {
   padding: 0 0 0 278px;
   gap: 50px;
 }
@@ -224,6 +224,7 @@ body {
   padding: 60px 0;
   padding-left: 215px;
 }
+
 .logo-footer {
   font-family: "Raleway" sans-serif;
   font-weight: 700;
@@ -266,16 +267,23 @@ body {
 }
 
 /*strona portfolio*/
+
 .wrapper {
   width: 1600px;
   margin: 0 auto;
   background-color: var(--white);
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .header {
   display: flex;
-  align-items: center;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   padding: 25px 0 24px 0;
   gap: 93px;
 }
@@ -286,6 +294,7 @@ body {
   list-style: none;
   gap: 8px;
   margin-top: 94px;
+  cursor: pointer;
 }
 
 .buttons-list {
@@ -309,11 +318,6 @@ body {
 .buttons-list:focus {
   background-color: var(--activecolor);
   color: var(--white);
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .products-container {
