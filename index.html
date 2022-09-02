@@ -20,49 +20,59 @@
 
   <body>
     <div class="wrapper">
-      <header class="header">
-        <div class="container">
-          <h3>
-            <a class="logo-header" href="./index.html"
-              ><span class="logo-blue-text">Web</span>Studio
-            </a>
-          </h3>
-          <nav>
-            <ul class="navi-list">
-              <li>
-                <a class="navi-list links-not-underlined" href="./index.html"
-                  >Agencja</a
-                >
-              </li>
-              <li>
-                <a
-                  class="navi-list links-not-underlined"
-                  href="./portfolio.html"
-                  >Portfolio</a
-                >
-              </li>
-              <li>
-                <a class="navi-list links-not-underlined" href="./contacts.html"
-                  >Kontakt</a
-                >
-              </li>
-            </ul>
-          </nav>
-          <a
-            class="links-contacts links-not-underlined"
-            href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-          <a class="links-contacts links-not-underlined" href="tel:+48111111111"
-            >+48 111 111 111</a
-          >
-        </div>
+      <header class="container">
+        <h3 class="header">
+          <a class="logo-header" href="./index.html"
+            ><span class="logo-blue-text">Web</span>Studio
+          </a>
+        </h3>
+        <nav>
+          <ul class="navi-list">
+            <li>
+              <a
+                class="navi-list-style links-not-underlined"
+                href="./index.html"
+                >Agencja</a
+              >
+            </li>
+            <li>
+              <a
+                class="navi-list-style links-not-underlined"
+                href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a
+                class="navi-list-style links-not-underlined"
+                href="./contacts.html"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <ul class="links-contacts">
+          <li>
+            <a
+              class="links-contacts-style links-not-underlined"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a
+              class="links-contacts-style links-not-underlined"
+              href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
+          </li>
+        </ul>
       </header>
 
       <main>
-        <section class="section-top">
-          <div class="container">
-            <h1>
+        <section>
+          <div class="section-top">
+            <h1 class="section-top-title">
               EFEKTYWNE ROZWIĄZANIA
               <br />
               DLA WASZEGO BIZNESU
@@ -74,7 +84,7 @@
         </section>
         <section class="container">
           <ul class="speciality-style zero-padding">
-            <li>
+            <li class="speciality-list-style">
               <h5 class="description-title">LOREM IPSUM</h5>
               <p class="description-text zero-margin">
                 Lorem ipsum dolor sit amet, consectetur
@@ -84,7 +94,7 @@
                 non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
+            <li class="speciality-list-style">
               <h5 class="description-title">LOREM IPSUM</h5>
               <p class="description-text zero-margin">
                 Lorem ipsum dolor sit amet, consectetur
@@ -94,7 +104,7 @@
                 non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
+            <li class="speciality-list-style">
               <h5 class="description-title">LOREM IPSUM</h5>
               <p class="description-text zero-margin">
                 Lorem ipsum dolor sit amet, consectetur
@@ -104,7 +114,7 @@
                 non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
+            <li class="speciality-list-style">
               <h5 class="description-title">LOREM IPSUM</h5>
               <p class="description-text zero-margin">
                 Lorem ipsum dolor sit amet, consectetur
@@ -116,10 +126,10 @@
             </li>
           </ul>
         </section>
-        <section class="section-header-style">
-          <div class="container">
-            <h2 class="section-header zero-padding">Czym się zajmujemy</h2>
-            <ul class="speciality-list-style zero-padding">
+        <section class="container">
+          <div class="section-jobs-style">
+            <h2 class="section-jobs-title">Czym się zajmujemy</h2>
+            <ul class="section-jobs-img zero-padding">
               <li>
                 <img
                   src="images/box1.jpg"
@@ -147,17 +157,17 @@
             </ul>
           </div>
         </section>
-        <section class="team-background">
-          <div class="container">
-            <h2 class="section-header zero-margin">Nasz zespół</h2>
-            <ul class="team-list-style zero-margin zero-padding">
+        <section>
+          <div class="section-team">
+            <h2 class="section-team-title">Nasz zespół</h2>
+            <ul class="team-list-style zero-margin">
               <li>
-                <figure>
+                <figure class="team-card-container">
                   <img
                     src="images/team-card1.jpg"
                     alt="picture of John Doe - Product Designer"
                     width="270"
-                    height="368"
+                    height="260"
                   />
                   <figcaption class="team-member">
                     John Doe<span class="member-proffession"
@@ -167,12 +177,12 @@
                 </figure>
               </li>
               <li>
-                <figure>
+                <figure class="team-card-container ">
                   <img
                     src="images/team-card2.jpg"
                     alt="picture of John Doe - Frontend Developer"
                     width="270"
-                    height="368"
+                    height="260"
                   />
                   <figcaption class="team-member">
                     John Doe<span class="member-proffession"
@@ -182,12 +192,12 @@
                 </figure>
               </li>
               <li>
-                <figure>
+                <figure class="team-card-container ">
                   <img
                     src="images/team-card3.jpg"
                     alt="picture of John Doe - Marketing"
                     width="270"
-                    height="368"
+                    height="260"
                   />
                   <figcaption class="team-member">
                     John Doe<span class="member-proffession">Marketing</span>
@@ -195,12 +205,12 @@
                 </figure>
               </li>
               <li>
-                <figure>
+                <figure class="team-card-container ">
                   <img
                     src="images/team-card4.jpg"
                     alt="picture of John Doe - UI Designer"
                     width="270"
-                    height="368"
+                    height="260"
                   />
                   <figcaption class="team-member">
                     John Doe<span class="member-proffession">UI Designer</span>
@@ -212,23 +222,21 @@
         </section>
       </main>
 
-      <footer class="footer-style">
-        <div class="container">
-          <h3 class="logo-footer">
-            <span class="logo-blue-text">Web</span>Studio
-          </h3>
-          <address class="footer-links">
-            <p class="footer-address">m. Warszawa, Aleje Jerozolimskie 21</p>
-            <a
-              class="footer links links-shadow links-not-underlined"
-              href="info@example.com"
-              >info@example.com</a
-            >
-            <a class="footer-links links-not-underlined" href="+48111111111"
-              >+48 111 111 111</a
-            >
-          </address>
-        </div>
+      <footer class="footer-style container">
+        <h3 class="logo-footer">
+          <span class="logo-blue-text">Web</span>Studio
+        </h3>
+        <address class="footer-links">
+          <p class="footer-address">m. Warszawa, Aleje Jerozolimskie 21</p>
+          <a
+            class="footer-links links-shadow links-not-underlined"
+            href="info@example.com"
+            >info@example.com</a
+          >
+          <a class="footer-links links-not-underlined" href="+48111111111"
+            >+48 111 111 111</a
+          >
+        </address>
       </footer>
     </div>
   </body>
