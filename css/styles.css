@@ -118,7 +118,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 200px 200px 0 200px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .section-top-title {
@@ -133,7 +134,7 @@ body {
   letter-spacing: 0.06em;
   color: var(--white);
   padding: 0;
-  margin: 0;
+  margin-top: 106px;
 }
 
 .main-button-style {
@@ -145,7 +146,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  margin: 0 0 280px 0;
+  margin-bottom: 106px;
   padding: 10px 41px 10px 42px;
 }
 
@@ -170,7 +171,7 @@ body {
   flex-direction: column;
   gap: 30px;
   list-style: none;
-  margin: 94px 0;
+  margin: 0;
   justify-content: center;
   align-items: center;
   padding: 0;
@@ -191,21 +192,18 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--grey);
-  padding: 0;
 }
 
 .section-jobs-style {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 94px;
 }
 
 .section-jobs-title {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  justify-items: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -213,17 +211,16 @@ body {
   letter-spacing: 0.03em;
   margin: 0;
   padding-bottom: 50px;
+  margin-top: 94px;
 }
 
 .section-jobs-img {
   display: flex;
   flex-direction: row;
   list-style: none;
-  margin: 0;
   gap: 30px;
   justify-content: center;
-  width: 100%;
-  padding-bottom: 94px;
+  align-items: center;
 }
 
 .section-team {
@@ -231,7 +228,8 @@ body {
   background-color: var(--backgroundlightblue);
   justify-content: center;
   align-items: center;
-  padding: 0 200px 94px 200px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .section-team-title {
@@ -243,7 +241,6 @@ body {
   margin: 0;
   justify-items: center;
   padding-bottom: 50px;
-  padding-top: 94px;
 }
 
 .team-list-style {
@@ -369,7 +366,6 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  margin: 0;
 }
 
 .buttons-selection {
