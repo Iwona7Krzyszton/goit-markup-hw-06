@@ -27,13 +27,32 @@ body {
 }
 
 .header {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  gap: 94px;
+  padding: 25px 0 24px 0;
+}
+
+.icons-header {
+  fill: var(--grey);
   display: flex;
   flex-direction: row;
-  background-color: var(--white);
-  margin: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-right: 10px;
   padding: 0;
 }
 
+.icons-header:hover {
+  color: var(--activecolor);
+}
+
+.icons-header:focus {
+  color: var(--activecolor);
+}
 .visible-border {
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
@@ -48,7 +67,7 @@ body {
   line-height: 1.19;
   color: var(--black);
   margin: 0;
-  padding: 24px 0 25px 0;
+  padding: 0;
 }
 
 .logo-blue-text {
@@ -58,6 +77,7 @@ body {
 .links-not-underlined {
   text-decoration: none;
   color: var(--grey);
+  padding: 0;
 }
 
 .navi-list-style {
@@ -77,29 +97,29 @@ body {
   list-style: none;
   line-height: 1.2;
   gap: 46px;
-  margin-left: 93px;
-  margin-bottom: 0;
-  margin-top: 0;
-  margin-right: 0;
-  padding: 32px 0;
+  margin: 0;
+  padding-right: 250px;
 }
 
 .links-contacts {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   color: var(--grey);
   font-weight: 500;
   list-style: none;
   letter-spacing: 0.02em;
+  padding: 0;
   margin: 0;
-  gap: 50px;
-  padding: 32px 0 32px 404px;
+  gap: 30px;
 }
 
 .links-contacts-style {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -113,13 +133,17 @@ body {
 }
 
 .section-top {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/icons.svg/img.svg");
   background-color: var(--backgroundgrey);
   gap: 30px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 200px;
-  padding-right: 200px;
+  width: 100%;
 }
 
 .section-top-title {
@@ -159,6 +183,14 @@ body {
   letter-spacing: 0.06em;
   color: var(--white);
   padding: 6px 22px;
+}
+
+.speciality-icon{
+display:flex;
+flex-direction: row;
+gap: 30px;
+justify-content: center;
+align-items: center;
 }
 
 .speciality-style {
@@ -366,6 +398,7 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  width: 100%;
 }
 
 .buttons-selection {
