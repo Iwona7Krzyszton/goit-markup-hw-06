@@ -102,6 +102,18 @@ body {
   padding-right: 250px;
 }
 
+.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--blue);
+  transform: translateY(29px);
+  border-radius: 2px;
+}
+
 .links-contacts {
   display: flex;
   flex-direction: row;
@@ -127,10 +139,12 @@ body {
 
 .links-contacts-style:hover {
   color: var(--activecolor);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .links-contacts-style:focus {
   color: var(--activecolor);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-top {
@@ -200,10 +214,12 @@ body {
 
 .speciality-icon:hover {
   border: solid var(--activecolor) 1px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .speciality-icon:focus {
   border-color: var(--activecolor);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .speciality-style {
@@ -266,6 +282,24 @@ body {
   gap: 30px;
   justify-content: center;
   align-items: center;
+}
+
+.section-jobs-label {
+  position: relative;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: rgba(47, 48, 58, 0.8);
+  padding: 27px 0;
+  height: 70px;
+  top: -70px;
+  width: 100%;
 }
 
 .section-team {
@@ -361,6 +395,7 @@ body {
   height: 44px;
   background-color: var(--activecolor);
   fill: var(--white);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-clients-style {
@@ -400,6 +435,7 @@ body {
   height: 92px;
   fill: var(--activecolor);
   border-color: var(--activecolor);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .zero-margin {
@@ -452,10 +488,12 @@ body {
 
 .footer-links:hover {
   color: var(--activecolor);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-links:focus {
   color: var(--activecolor);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .links-shadow {
@@ -516,6 +554,47 @@ body {
   fill: var(--white);
 }
 
+/*okno modalne*/
+
+.backdrop {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 1600px;
+  min-height: 1024px;
+  left: 1px;
+  top: 19px;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  min-height: 581px;
+  transform: translate(-50%, -50%);
+  background-color: var(--white);
+  transition: transform 250ms ease-in-out;
+  display: inline-block;
+}
+
+.close-button {
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 /*strona portfolio*/
 
 .wrapper {
@@ -564,6 +643,7 @@ body {
   color: var(--white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .products-container {
@@ -574,6 +654,7 @@ body {
   background: var(--white);
   list-style: none;
   padding-bottom: 0;
+  padding-left: 0;
 }
 
 .product-card {
@@ -592,13 +673,54 @@ body {
   cursor: pointer;
 }
 
+img {
+  display: block;
+}
+
+.product-card-anim {
+  width: 370px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.product-card-overlay {
+  position: absolute;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  transform: translateY(100%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--white);
+  background-color: rgba(33, 150, 243, 0.9);
+}
+
+.product-card-anim:hover .product-card-overlay {
+  transform: translateY(0);
+}
+
+.product-card-overlay > p {
+  padding-left: 24px;
+  padding-top: 49px;
+  background-color: rgba(33, 150, 243, 0.9);
+  color: var(--white);
+}
+
 .product-description-container {
   background: var(--white);
   border: 1px solid var(--productborder);
-  width: 368px;
+  width: 369px;
   height: 110px;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .product-card-header {
@@ -609,7 +731,7 @@ body {
   letter-spacing: 0.06em;
   text-align: left;
   margin: 0;
-  padding: 20px 24px 4px 20px;
+  padding: 20px 24px 4px 24px;
 }
 
 .product-card-description {
@@ -621,8 +743,4 @@ body {
   color: var(--grey);
   margin: 0;
   padding: 0 24px 20px 24px;
-}
-
-img {
-  display: block;
 }

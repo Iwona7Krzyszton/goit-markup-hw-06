@@ -30,10 +30,10 @@
           <ul class="navi-list">
             <li>
               <a
-                class="navi-list-style links-not-underlined"
+                class="navi-list-style links-not-underlined active"
                 href="./index.html"
-                >Agencja</a
-              >
+                >Agencja
+                </a>
             </li>
             <li>
               <a
@@ -87,7 +87,7 @@
             <br />
             DLA WASZEGO BIZNESU
           </h1>
-          <button type="button" class="main-button-style">Zamów usługe</button>
+          <button type="button" class="main-button-style" data-modal-open>Zamów usługe</button>
         </section>
         <div class="section">
           <section>
@@ -158,28 +158,38 @@
             <h2 class="section-jobs-title">Czym się zajmujemy</h2>
             <ul class="section-jobs-img zero-padding zero-margin">
               <li>
+                <figure class="zero-margin">
                 <img
                   src="images/box1.jpg"
                   alt="programmer is working in his desk-office"
                   width="370"
                   height="294"
                 />
+                <figcaption class="section-jobs-label">Aplikacje komputerowe          
+                </figcaption>
+              </figure>
               </li>
               <li>
+                <figure class="zero-margin">
                 <img
                   src="images/box2.jpg"
                   alt="designers are developing application for smartphones - team of creators is working on the interface for mobile phones"
                   width="370"
                   height="294"
                 />
+                <figcaption class="section-jobs-label">Aplikacje mobilne</figcaption>
+              </figure>
               </li>
               <li>
+                <figure class="zero-margin">
                 <img
                   src="images/box3.jpg"
                   alt="creative artist, web-designer is working on the colour selection, graphic on the tablet"
                   width="370"
                   height="294"
                 />
+              <figcaption class="section-jobs-label">Rozwiązania graficzne</figcaption>
+              </figure>
               </li>
             </ul>
           </section>
@@ -533,5 +543,13 @@
         </div>
       </footer>
     </div>
+
+    <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="close-button" data-modal-close>X</button>
+    </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
