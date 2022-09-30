@@ -23,7 +23,7 @@
       <header class="container header">
         <h3 class="zero-margin">
           <a class="logo-header" href="./index.html"
-            ><span class="logo-blue-text">Web</span>Studio
+            ><span class="blue-text">Web</span>Studio
           </a>
         </h3>
         <nav>
@@ -485,7 +485,7 @@
         <div class="container">
           <div class="footer-info">
             <h3 class="logo-footer">
-              <span class="logo-blue-text">Web</span>Studio
+              <span class="blue-text">Web</span>Studio
             </h3>
             <address class="footer-links">
               <p class="footer-address">m. Warszawa, Aleje Jerozolimskie 21</p>
@@ -547,6 +547,46 @@
     <div class="backdrop is-hidden" data-modal="">
     <div class="modal">
       <button type="button" class="close-button" data-modal-close>X</button>
+      <h6 class="form-header">Zostaw swoje dane w formularzu poniżej</h6>
+      <form class="form-style" name="personal-data-form" autocomplete="on" novalidate>
+        <label class="label-style" for="full-name">
+          Imie
+          <svg class="form-icons">
+            <use href="./images/icons.svg/symbol-defs.svg#icon-person" 
+            width="12" 
+            height="12" 
+           >
+            </use>
+          </svg>
+          <input class="form-input-style" id="full-name" type="text" name="user-name" />
+        </label>
+        <label class="label-style" for="phone-number">
+          Telefon
+          <svg class="form-icons">
+            <use href="./images/icons.svg/symbol-defs.svg#icon-phone" width="13" height="13"></use>
+          </svg>
+          <input class="form-input-style" id="phone-number" type="tel" name="phone-number" />
+        </label>
+        <label class="label-style" for="e-mail">
+          Email
+          <svg class="form-icons">
+            <use href="./images/icons.svg/symbol-defs.svg#icon-email" width="13" height="13"></use>
+          </svg>
+          <input class="form-input-style" id="e-mail" type="mail" name="email" />
+        </label>
+        <label class="label-style">
+          Komentarz
+          <textarea class="form-comments" name="comment" rows="5" placeholder="Wprowadź tekst"></textarea>
+        </label>
+      </form>
+      <label>
+        <input type="checkbox" name="statement" />
+        <svg class="tick-icon">
+          <use href="./images/icons.svg/symbol-defs.svg#icon-checkbox" width="11" height="8"></use>
+        </svg>
+        <span class="statement-text"></span> Oświadczam iż akceptuję <a class="blue-text" href="#">Regulamin</a> i <a class="blue-text" href="#">Politykę Prywatności.</a>
+      </label>
+      <button type="submit" class="form-button">Wyślij</button> 
     </div>
     </div>
 
