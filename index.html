@@ -33,7 +33,7 @@
                 class="navi-list-style links-not-underlined active"
                 href="./index.html"
                 >Agencja
-                </a>
+              </a>
             </li>
             <li>
               <a
@@ -68,12 +68,12 @@
           <li>
             <a
               class="links-contacts-style links-not-underlined"
-              href="tel:+48111111111">
+              href="tel:+48111111111"
+            >
               <svg class="icons-header" width="10" height="16">
                 <use
                   href="./images/icons.svg/symbol-defs.svg#icon-smartphone"
-                ></use>
-              </svg>+48 111 111 111
+                ></use></svg>+48 111 111 111
             </a>
           </li>
         </ul>
@@ -87,7 +87,9 @@
             <br />
             DLA WASZEGO BIZNESU
           </h1>
-          <button type="button" class="main-button-style" data-modal-open>Zamów usługe</button>
+          <button type="button" class="main-button-style" data-modal-open>
+            Zamów usługe
+          </button>
         </section>
         <div class="section">
           <section>
@@ -159,37 +161,42 @@
             <ul class="section-jobs-img zero-padding zero-margin">
               <li>
                 <figure class="zero-margin">
-                <img
-                  src="images/box1.jpg"
-                  alt="programmer is working in his desk-office"
-                  width="370"
-                  height="294"
-                />
-                <figcaption class="section-jobs-label">Aplikacje komputerowe          
-                </figcaption>
-              </figure>
+                  <img
+                    src="images/box1.jpg"
+                    alt="programmer is working in his desk-office"
+                    width="370"
+                    height="294"
+                  />
+                  <figcaption class="section-jobs-label">
+                    Aplikacje komputerowe
+                  </figcaption>
+                </figure>
               </li>
               <li>
                 <figure class="zero-margin">
-                <img
-                  src="images/box2.jpg"
-                  alt="designers are developing application for smartphones - team of creators is working on the interface for mobile phones"
-                  width="370"
-                  height="294"
-                />
-                <figcaption class="section-jobs-label">Aplikacje mobilne</figcaption>
-              </figure>
+                  <img
+                    src="images/box2.jpg"
+                    alt="designers are developing application for smartphones - team of creators is working on the interface for mobile phones"
+                    width="370"
+                    height="294"
+                  />
+                  <figcaption class="section-jobs-label">
+                    Aplikacje mobilne
+                  </figcaption>
+                </figure>
               </li>
               <li>
                 <figure class="zero-margin">
-                <img
-                  src="images/box3.jpg"
-                  alt="creative artist, web-designer is working on the colour selection, graphic on the tablet"
-                  width="370"
-                  height="294"
-                />
-              <figcaption class="section-jobs-label">Rozwiązania graficzne</figcaption>
-              </figure>
+                  <img
+                    src="images/box3.jpg"
+                    alt="creative artist, web-designer is working on the colour selection, graphic on the tablet"
+                    width="370"
+                    height="294"
+                  />
+                  <figcaption class="section-jobs-label">
+                    Rozwiązania graficzne
+                  </figcaption>
+                </figure>
               </li>
             </ul>
           </section>
@@ -540,68 +547,120 @@
               </svg>
             </div>
           </div>
-            <div class="footer-form-container">
-              <h4 class="footer-title">Zapisz się do newslettera</h4>
-              <form class="footer-signup-form" name="signup-form" autocomplete="on" novalidate>
-                <label><input class="signup-mail" id="e-mail" type="email" name="email" placeholder="E-mail"/></label>
-                <button class="signup-button" type="submit">Zapisz się</button> 
-                <svg class="signup-icon">
-                  <use href="./images/icons.svg/symbol-defs.svg#icon-send" width="24"
-                  height="24" x="20" y="0"></use>
-                </svg>
-              </form>
-            </div>
+          <div class="footer-form-container">
+            <h4 class="footer-title">Zapisz się do newslettera</h4>
+            <form
+              class="footer-signup-form"
+              name="signup-form"
+              autocomplete="on"
+              novalidate
+            >
+              <label>
+                <input
+                  class="signup-mail"
+                  id="e-mail"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+              /></label>
+              <button class="signup-button" type="submit">Zapisz się</button>
+              <svg class="signup-icon">
+                <use
+                  href="./images/icons.svg/symbol-defs.svg#icon-send"
+                  width="24"
+                  height="24"
+                  x="20"
+                  y="0"
+                ></use>
+              </svg>
+            </form>
           </div>
         </div>
       </footer>
     </div>
-
-    <div class="backdrop is-hidden" data-modal="">
+    <div class="backdrop is-hidden" data-modal=""></div>
     <div class="modal">
       <button type="button" class="close-button" data-modal-close>X</button>
       <h6 class="form-header">Zostaw swoje dane w formularzu poniżej</h6>
-      <form class="form-style" name="personal-data-form" autocomplete="on" novalidate>
+      <form
+        class="form-style"
+        name="personal-data-form"
+        autocomplete="on"
+        novalidate
+      >
         <label class="label-style" for="full-name">
           Imie
           <svg class="form-icons">
-            <use href="./images/icons.svg/symbol-defs.svg#icon-person" 
-            width="12" 
-            height="12" 
-           >
-            </use>
+            <use
+              href="./images/icons.svg/symbol-defs.svg#icon-person"
+              width="12"
+              height="12"
+            ></use>
           </svg>
-          <input class="form-input-style" id="full-name" type="text" name="user-name" />
+          <input
+            class="form-input-style"
+            id="full-name"
+            type="text"
+            name="user-name"
+          />
         </label>
         <label class="label-style" for="phone-number">
           Telefon
           <svg class="form-icons">
-            <use href="./images/icons.svg/symbol-defs.svg#icon-phone" width="13" height="13"></use>
+            <use
+              href="./images/icons.svg/symbol-defs.svg#icon-phone"
+              width="13"
+              height="13"
+            ></use>
           </svg>
-          <input class="form-input-style" id="phone-number" type="tel" name="phone-number" />
+          <input
+            class="form-input-style"
+            id="phone-number"
+            type="tel"
+            name="phone-number"
+          />
         </label>
         <label class="label-style" for="email">
           Email
           <svg class="form-icons">
-            <use href="./images/icons.svg/symbol-defs.svg#icon-email" width="13" height="13"></use>
+            <use
+              href="./images/icons.svg/symbol-defs.svg#icon-email"
+              width="13"
+              height="13"
+            ></use>
           </svg>
-          <input class="form-input-style" id="email" type="email" name="email" />
+          <input
+            class="form-input-style"
+            id="email"
+            type="email"
+            name="email"
+          />
         </label>
         <label class="label-style">
           Komentarz
-          <textarea class="form-comments" name="comment" rows="5" placeholder="Wprowadź tekst"></textarea>
+          <textarea
+            class="form-comments"
+            name="comment"
+            rows="5"
+            placeholder="Wprowadź tekst"
+          ></textarea>
         </label>
       </form>
       <label>
         <input type="checkbox" name="statement" />
         <svg class="tick-icon">
-          <use href="./images/icons.svg/symbol-defs.svg#icon-checkbox" width="11" height="8"></use>
+          <use
+            href="./images/icons.svg/symbol-defs.svg#icon-checkbox"
+            width="11"
+            height="8"
+          ></use>
         </svg>
-        <span class="statement-text"></span> Oświadczam iż akceptuję <a class="blue-text" href="#">Regulamin</a> i <a class="blue-text" href="#">Politykę Prywatności.</a>
+        <span class="statement-text"></span> Oświadczam iż akceptuję
+        <a class="blue-text" href="#">Regulamin</a> i
+        <a class="blue-text" href="#">Politykę Prywatności.</a>
       </label>
-      <button type="submit" class="form-button">Wyślij</button> 
+      <button type="submit" class="form-button">Wyślij</button>
     </div>
-    </div>
-
     <script src="./js/modal.js"></script>
   </body>
 </html>
