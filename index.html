@@ -73,7 +73,9 @@
               <svg class="icons-header" width="10" height="16">
                 <use
                   href="./images/icons.svg/symbol-defs.svg#icon-smartphone"
-                ></use></svg>+48 111 111 111
+                ></use>
+              </svg>
+              +48 111 111 111
             </a>
           </li>
         </ul>
@@ -569,7 +571,7 @@
                   href="./images/icons.svg/symbol-defs.svg#icon-send"
                   width="24"
                   height="24"
-                  x="20"
+                  x="24"
                   y="0"
                 ></use>
               </svg>
@@ -579,88 +581,89 @@
       </footer>
     </div>
 
-    <div class="backdrop is-hidden" data-modal=""></div>
-    <div class="modal">
-      <button type="button" class="close-button" data-modal-close>X</button>
-      <h6 class="form-header">Zostaw swoje dane w formularzu poniżej</h6>
-      <form
-        class="form-style"
-        name="personal-data-form"
-        autocomplete="on"
-        novalidate
-      >
-        <label class="label-style" for="full-name">
-          Imie
-          <svg class="form-icons">
+    <div class="backdrop is-hidden" data-modal="">
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>X</button>
+        <h6 class="form-header">Zostaw swoje dane w formularzu poniżej</h6>
+        <form
+          class="form-style"
+          name="personal-data-form"
+          autocomplete="on"
+          novalidate
+        >
+          <label class="label-style" for="full-name">
+            Imie
+            <svg class="form-icons">
+              <use
+                href="./images/icons.svg/symbol-defs.svg#icon-person"
+                width="12"
+                height="12"
+              ></use>
+            </svg>
+            <input
+              class="form-input-style"
+              id="full-name"
+              type="text"
+              name="user-name"
+            />
+          </label>
+          <label class="label-style" for="phone-number">
+            Telefon
+            <svg class="form-icons">
+              <use
+                href="./images/icons.svg/symbol-defs.svg#icon-phone"
+                width="13"
+                height="13"
+              ></use>
+            </svg>
+            <input
+              class="form-input-style"
+              id="phone-number"
+              type="tel"
+              name="phone-number"
+            />
+          </label>
+          <label class="label-style" for="email">
+            Email
+            <svg class="form-icons">
+              <use
+                href="./images/icons.svg/symbol-defs.svg#icon-email"
+                width="13"
+                height="13"
+              ></use>
+            </svg>
+            <input
+              class="form-input-style"
+              id="email"
+              type="email"
+              name="email"
+            />
+          </label>
+          <label class="label-style">
+            Komentarz
+            <textarea
+              class="form-comments"
+              name="comment"
+              rows="5"
+              placeholder="Wprowadź tekst"
+            ></textarea>
+          </label>
+        </form>
+        <label>
+          <input type="checkbox" name="statement" />
+          <svg class="tick-icon">
             <use
-              href="./images/icons.svg/symbol-defs.svg#icon-person"
-              width="12"
-              height="12"
+              href="./images/icons.svg/symbol-defs.svg#icon-checkbox"
+              width="11"
+              height="8"
             ></use>
           </svg>
-          <input
-            class="form-input-style"
-            id="full-name"
-            type="text"
-            name="user-name"
-          />
+          <span class="statement-text"></span> Oświadczam iż akceptuję
+          <a class="blue-text" href="#">Regulamin</a> i
+          <a class="blue-text" href="#">Politykę Prywatności.</a>
         </label>
-        <label class="label-style" for="phone-number">
-          Telefon
-          <svg class="form-icons">
-            <use
-              href="./images/icons.svg/symbol-defs.svg#icon-phone"
-              width="13"
-              height="13"
-            ></use>
-          </svg>
-          <input
-            class="form-input-style"
-            id="phone-number"
-            type="tel"
-            name="phone-number"
-          />
-        </label>
-        <label class="label-style" for="email">
-          Email
-          <svg class="form-icons">
-            <use
-              href="./images/icons.svg/symbol-defs.svg#icon-email"
-              width="13"
-              height="13"
-            ></use>
-          </svg>
-          <input
-            class="form-input-style"
-            id="email"
-            type="email"
-            name="email"
-          />
-        </label>
-        <label class="label-style">
-          Komentarz
-          <textarea
-            class="form-comments"
-            name="comment"
-            rows="5"
-            placeholder="Wprowadź tekst"
-          ></textarea>
-        </label>
-      </form>
-      <label>
-        <input type="checkbox" name="statement" />
-        <svg class="tick-icon">
-          <use
-            href="./images/icons.svg/symbol-defs.svg#icon-checkbox"
-            width="11"
-            height="8"
-          ></use>
-        </svg>
-        <span class="statement-text"></span> Oświadczam iż akceptuję
-        <a class="blue-text" href="#">Regulamin</a> i
-        <a class="blue-text" href="#">Politykę Prywatności.</a>
-      </label>
-      <button type="submit" class="form-button">Wyślij</button>
+        <button type="submit" class="form-button">Wyślij</button>
+      </div>
     </div>
 
     <script src="./js/modal.js"></script>
